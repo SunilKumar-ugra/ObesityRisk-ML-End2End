@@ -18,4 +18,4 @@ logging.basicConfig(
     ]
 )
 
-logger=logging.getLogger("mice")
+logger=logging.getLogger("obesity")
