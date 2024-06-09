@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from mice import logger
+from obesity import logger
 import json
 import joblib
 from ensure import ensure_annotations
