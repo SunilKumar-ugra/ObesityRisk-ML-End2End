@@ -1,4 +1,4 @@
-COLUMNS:
+COLUMNS: 
   Gender: object
   Age: float64
   Height: float64
@@ -16,5 +16,5 @@ COLUMNS:
   CALC: object
   MTRANS: object
   NObeyesdad: object
-TARGET_COLUMN:
+TARGET_COLUMN: 
   name: NObeyesdad
