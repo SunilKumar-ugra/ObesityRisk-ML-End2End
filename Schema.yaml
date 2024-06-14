@@ -1,0 +1,20 @@
+COLUMNS:
+  Gender: object
+  Age: float64
+  Height: float64
+  Weight: float64
+  family_history_with_overweight: object
+  FAVC: object
+  FCVC: float64
+  NCP: float64
+  CAEC: object
+  SMOKE: object
+  CH2O: float64
+  SCC: object
+  FAF: float64
+  TUE: float64
+  CALC: object
+  MTRANS: object
+  NObeyesdad: object
+TARGET_COLUMN:
+  name: NObeyesdad
