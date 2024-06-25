@@ -16,3 +16,5 @@ data_validation:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/ObesityDataSet.csv
+  categorical_feature_path : categorical.joblib
+  categorical_json_path : categorical.json
