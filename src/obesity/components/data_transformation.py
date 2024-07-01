@@ -78,8 +78,8 @@ class DataTransformation:
             le_cat_name[i] = dict(zip(cat_le.classes_, cat_le.transform(cat_le.classes_)))
         
         logger.info(le_cat_name)
-        save_bin(cat_le, (os.path.join(self.config.root_dir, self.config.categorical_feature_path)))
-        print(Path(os.path.join(self.config.root_dir, self.config.categorical_path)))
+        #save_bin(cat_le, (os.path.join(self.config.root_dir, self.config.categorical_feature_path)))
+        print(Path(os.path.join(self.config.root_dir, self.config.categorical_json_path)))
         save_json(Path(os.path.join(self.config.root_dir, self.config.categorical_json_path)),le_cat_name)  
         return dataset
     
@@ -110,7 +110,5 @@ class DataTransformation:
         data=self.scaling(data)
         self.train_test_spliting(data)
 
-if __name__=="main":
-    data_transformation = DataTransformation()
-    data_transformation.transformation()
+
         
