@@ -12,7 +12,7 @@ class ConfigurationManager:
     ):
 
         self.config = read_yaml(config_filepath)
-        # self.params = read_yaml(params_filepath)
+        self.params = read_yaml(params_filepath)
         self.schema = read_yaml(schema_filepath)
         
 
@@ -67,7 +67,7 @@ class ConfigurationManager:
 
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.ElasticNet
+        params = self.params
         schema =  self.schema.TARGET_COLUMN
 
         create_directories([config.root_dir])
