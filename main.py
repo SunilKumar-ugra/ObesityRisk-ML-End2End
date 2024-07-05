@@ -36,3 +36,15 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+from obesity.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+STAGE_NAME = "Model Trainer stage"
+try: 
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_trainer = ModelTrainerTrainingPipeline()
+   model_trainer.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
